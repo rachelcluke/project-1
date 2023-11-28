@@ -1,0 +1,234 @@
+/* ------------------------------------Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@200;400&family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap');
+
+/* ------------------------------------Backgrounds */
+
+* {   padding: 0;   margin: 0;}
+
+.row-bkg-header {
+    background-color: #F2F2F2;
+    margin: 0.7rem auto;
+    height: 0.7rem;
+    width: 30rem;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: var(--white);
+}
+
+
+/* ------------------------------------Heading */
+
+#nav {
+    color: black !important;
+    
+}
+
+header {
+    display: flex;
+    flex: 0 0;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+.university-name {
+    font: 500 8px Newsreader;
+    color: #426B1F;
+    letter-spacing: -0.08px;
+ }
+
+ .list-inline-item {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    font: 400 8px Inter;
+    color:black !important;
+ }
+
+/* ------------------------------------Section 0: Home */
+
+ .mixsoc-home {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    margin-top: 0;
+    background-color: #ffffff;
+    background-image: url(../img/bkg-drink.jpg);
+    background-size: cover;
+    padding-bottom: 100px;
+    opacity: 0.95;
+ }
+
+#home {
+    padding: 10px
+}
+
+ .mixsoc-home-title {
+    box-sizing: border-box;
+    max-width: 235px;
+    font: 400 50px Glory;
+    color: #D3BF50;
+    display:flex;
+    flex: 0 0 auto;
+    text-align: left;
+    letter-spacing: 1px;
+ }
+
+ .mixsoc-home-subheading{
+    color: #ffffff;
+    font-family: Glory;
+    font-size: 30px;
+    max-width: 235px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: -0.3px;
+ }
+
+/* ------------------------------------Section 1: About Us */
+
+#about-us {
+    background-color: #F2F2F2 ;
+}
+
+/* ------------------------------------Section 2: Committee */
+
+/* ------------------------------------Section 3: Free Recipes */
+
+
+/* ------------------------------------Section 4: Sign Up */
+
+
+
+/* ------------------------------------Footer */
+
+
+/* ------------------------------------Media Queries */
+
+/*BREAKPOINT 1 - XS device*/
+@media (min-width: 320px) {
+
+    .row-bkg-header {
+        margin: 0.7rem auto;
+        height: 0.7rem;
+        width: 30rem;
+    }
+
+    .university-name {
+        font: 8px;
+        overflow-wrap: break-word;
+     }
+    
+     .list-inline-item {
+        font: 8px;
+        word-break: break-all;
+     }
+
+     .mixsoc-home {
+        padding-bottom: 100px;
+     }
+
+     .mixsoc-home-title {
+        font-size: 50px;
+     }
+
+     .mixsoc-home-subheading{
+        font-size: 30px;
+     }
+
+}
+
+/*BREAKPOINT 2 - Small device*/
+@media (min-width: 576px) {
+
+     .list-inline-item {
+        font: 30px;
+     }
+
+     .row-bkg-header {
+        margin: 1rem auto;
+        height: 1rem;
+        width: 30rem;
+     }
+
+     .mixsoc-home {
+        padding-bottom: 120px;
+     }
+
+     .mixsoc-home-title {
+        font-size: 80px;
+     }
+
+     .mixsoc-home-subheading{
+        font-size: 50px;
+     }
+
+}
+
+/*BREAKPOINT 3 - Medium device*/
+@media (min-width: 768px) {
+    .row-bkg-header {
+        height: 2.5rem;
+    }
+
+}
+
+/*BREAKPOINT 4 - Large device*/
+@media (min-width: 992px) {
+    .row-bkg-header {
+        height: 3rem;
+    }
+
+    .mixsoc-home {
+        padding-bottom: 140px;
+     }
+
+     .mixsoc-home-title {
+        font-size: 120px;
+     }
+
+     .mixsoc-home-subheading{
+        font-size: 90px;
+     }
+}
+
+/*BREAKPOINT 5 - XL device*/
+@media (min-width: 1200px) {
+    .row-bkg-header {
+        height: 3.5rem;
+    }
+
+    .mixsoc-home {
+        padding-bottom: 150px;
+     }
+
+     .mixsoc-home-title {
+        font-size: 140px;
+     }
+
+     .mixsoc-home-subheading{
+        font-size: 100px;
+     }
+}
+
+/*BREAKPOINT 6 - XXL device*/
+@media (min-width: 1400px) {
+
+    .row-bkg-header {
+        height: 4rem;
+    }
+
+    .mixsoc-home {
+        padding-bottom: 170px;
+     }
+
+     .mixsoc-home-title {
+        font-size: 150px;
+     }
+
+     .mixsoc-home-subheading{
+        font-size: 120px;
+     }
+}
