@@ -6,15 +6,10 @@
 
 * {   padding: 0;   margin: 0;}
 
-.row-bkg-header {
+.navbar {
     background-color: #F2F2F2;
-    margin: 0.7rem auto;
     height: 0.7rem;
-    width: 30rem;
     background-color: var(--black);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
     color: var(--white);
 }
 
@@ -28,25 +23,23 @@
 
 header {
     display: flex;
-    flex: 0 0;
     flex-direction: row;
-    gap: 12px;
-    align-items: center;
     justify-content: space-evenly;
  }
 
 .university-name {
-    font: 500 8px Newsreader;
+    font: 500 20px Newsreader;
     color: #426B1F;
     letter-spacing: -0.08px;
+    display: flex;
+    align-items: flex-start;
+    flex:1 1;
  }
 
  .list-inline-item {
     padding: 0;
     margin: 0;
-    margin-left: 10px;
-    font: 400 8px Inter;
-    color:black !important;
+    font: 400 20px Inter;
  }
 
 /* ------------------------------------Section 0: Home */
@@ -80,9 +73,9 @@ header {
  .mixsoc-home-subheading{
     color: #ffffff;
     font-family: Glory;
-    font-size: 30px;
+    font-size: 20px;
     max-width: 235px;
-    font-style: normal;
+    font-style: extralight;
     font-weight: 200;
     letter-spacing: -0.3px;
  }
@@ -118,12 +111,10 @@ header {
 
     .university-name {
         font: 8px;
-        overflow-wrap: break-word;
      }
     
      .list-inline-item {
         font: 8px;
-        word-break: break-all;
      }
 
      .mixsoc-home {
@@ -135,7 +126,7 @@ header {
      }
 
      .mixsoc-home-subheading{
-        font-size: 30px;
+        font-size: 20px;
      }
 
 }
@@ -158,11 +149,11 @@ header {
      }
 
      .mixsoc-home-title {
-        font-size: 80px;
+        font-size: 60px;
      }
 
      .mixsoc-home-subheading{
-        font-size: 50px;
+        font-size: 30px;
      }
 
 }
@@ -170,7 +161,7 @@ header {
 /*BREAKPOINT 3 - Medium device*/
 @media (min-width: 768px) {
     .row-bkg-header {
-        height: 2.5rem;
+        height: 1.5rem;
     }
 
 }
@@ -178,7 +169,7 @@ header {
 /*BREAKPOINT 4 - Large device*/
 @media (min-width: 992px) {
     .row-bkg-header {
-        height: 3rem;
+        height: 2rem;
     }
 
     .mixsoc-home {
@@ -186,18 +177,18 @@ header {
      }
 
      .mixsoc-home-title {
-        font-size: 120px;
+        font-size: 70px;
      }
 
      .mixsoc-home-subheading{
-        font-size: 90px;
+        font-size: 40px;
      }
 }
 
 /*BREAKPOINT 5 - XL device*/
 @media (min-width: 1200px) {
     .row-bkg-header {
-        height: 3.5rem;
+        height: 2.5rem;
     }
 
     .mixsoc-home {
@@ -205,11 +196,11 @@ header {
      }
 
      .mixsoc-home-title {
-        font-size: 140px;
+        font-size: 80px;
      }
 
      .mixsoc-home-subheading{
-        font-size: 100px;
+        font-size: 50px;
      }
 }
 
@@ -217,7 +208,7 @@ header {
 @media (min-width: 1400px) {
 
     .row-bkg-header {
-        height: 4rem;
+        height: 3rem;
     }
 
     .mixsoc-home {
@@ -225,10 +216,10 @@ header {
      }
 
      .mixsoc-home-title {
-        font-size: 150px;
+        font-size: 100px;
      }
 
      .mixsoc-home-subheading{
-        font-size: 120px;
+        font-size: 50px;
      }
 }
