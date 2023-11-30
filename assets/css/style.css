@@ -7,40 +7,80 @@
 * {   padding: 0;   margin: 0;}
 
 .navbar {
-    background-color: #F2F2F2;
     height: 0.7rem;
     background-color: var(--black);
     color: var(--white);
+
 }
 
 
 /* ------------------------------------Heading */
 
-#nav {
-    color: black !important;
-    
+a {
+    color: black; 
+    font: 400 20px Inter;
 }
 
-header {
+.primary-header {
     display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
  }
 
+ .primary-nav-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    /*default in case browser does not suport backdrop-filter*/
+    background: hsl(0 0% 100% / 0.5);
+
+    @supports (backdrop-filter: blur(1rem)) {
+        .primary.navigation {
+            background: hsl(0 0% 100% / 0.1);
+            (backdrop-filter: blur(1rem));
+        }
+    }
+    
+ }
+
+
 .university-name {
+    display: flex;
     font: 500 20px Newsreader;
     color: #426B1F;
     letter-spacing: -0.08px;
-    display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex:1 1;
+    padding-left:50px;
  }
 
  .list-inline-item {
-    padding: 0;
+    padding: 20;
     margin: 0;
-    font: 400 20px Inter;
  }
+
+ .list-inline-item:first-child {
+    left: 0;
+    position: absolute;
+}
+
+@media (max-width: 550px) {
+    .primary-nav-menu {
+        display: flex;
+        --gap: 2em;
+
+        /*so that mobile nav is fixed when user scrolls */
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 10rem 2em;
+
+    }
+}
 
 /* ------------------------------------Section 0: Home */
 
@@ -79,6 +119,7 @@ header {
     font-weight: 200;
     letter-spacing: -0.3px;
  }
+ 
 
 /* ------------------------------------Section 1: About Us */
 
@@ -101,7 +142,7 @@ header {
 /* ------------------------------------Media Queries */
 
 /*BREAKPOINT 1 - XS device*/
-@media (min-width: 320px) {
+@media (max-width: 320px) {
 
     .row-bkg-header {
         margin: 0.7rem auto;
@@ -109,12 +150,29 @@ header {
         width: 30rem;
     }
 
+    a {
+        font: 8px;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .nav-link {
+        transition: 0.7s ease;
+    }
+
+    .nav-link:hover {
+        color: #232023;
+    }
+
     .university-name {
+        padding-left:10px;
         font: 8px;
-     }
-    
-     .list-inline-item {
-        font: 8px;
+        align-items: center;
      }
 
      .mixsoc-home {
@@ -132,7 +190,7 @@ header {
 }
 
 /*BREAKPOINT 2 - Small device*/
-@media (min-width: 576px) {
+@media (max-width: 576px) {
 
      .list-inline-item {
         font: 30px;
@@ -159,7 +217,7 @@ header {
 }
 
 /*BREAKPOINT 3 - Medium device*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .row-bkg-header {
         height: 1.5rem;
     }
@@ -167,7 +225,7 @@ header {
 }
 
 /*BREAKPOINT 4 - Large device*/
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .row-bkg-header {
         height: 2rem;
     }
@@ -186,7 +244,7 @@ header {
 }
 
 /*BREAKPOINT 5 - XL device*/
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .row-bkg-header {
         height: 2.5rem;
     }
@@ -205,14 +263,14 @@ header {
 }
 
 /*BREAKPOINT 6 - XXL device*/
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
 
     .row-bkg-header {
         height: 3rem;
     }
 
     .mixsoc-home {
-        padding-bottom: 170px;
+        padding-bottom: 200px;
      }
 
      .mixsoc-home-title {
