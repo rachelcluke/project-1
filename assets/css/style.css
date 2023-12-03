@@ -7,7 +7,8 @@
 /* ------------------------------------Header */
 body {
     --color1: #F2F2F2;
-    --color2: #181818 ;
+    --color2: #181818;
+    --color3: #ffffff;
 }
 
 .primary-header {
@@ -17,7 +18,7 @@ body {
     align-items: center;
     list-style: none;
     position: relative;
-    background-color: var(--color1);
+    background-color: var(--color3);
     padding: 12px 20px;
 }
 
@@ -32,7 +33,7 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    transition: 0.20s ease-in-out;
+    transition: 0.40s ease-in-out;
 }
 
 nav a:link { text-decoration: none; }
@@ -48,14 +49,6 @@ nav a:hover {
     font-size: 1.5rem;
     display: none;
 }
-
- .primary-header a.icon {
-    background: var(--color2);
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
 
  .primary-nav-menu {
     display: flex;
@@ -103,7 +96,7 @@ nav a:hover {
 
 /*For small devices, it will display hamburger icon and have the nav menu as a column */
 /*For bigger devices, it will display the nav menu as a row on top of the screen */
-@media(max-width: 610px) {
+@media(max-width: 700px) {
     .primary-nav-menu {
         display: flex;
         flex-direction: column;
@@ -223,7 +216,7 @@ nav a:hover {
 }
 
 /*BREAKPOINT 3 - Medium device eg. LG Nexus 4, dimen: 768x1280*/
-@media (min-width: 341px) and (max-width: 768px) {
+@media (min-width: 541px) and (max-width: 768px) {
     /*Header*/
     .university-name {font-size: 12px;}
     .primary-header li a { 
