@@ -1,52 +1,59 @@
 /* ------------------------------------Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Glory:wght@200;400&family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap');
 
-/* ------------------------------------Backgrounds */
-
+/* ------------------------------------Universal */
 * {   padding: 0;   margin: 0;}
 
-.navbar {
-    height: 0.7rem;
-    background-color: var(--black);
-    color: var(--white);
-
-}
-
-
-/* ------------------------------------Heading */
-
-a {
-    color: black; 
-    font: 400 20px Inter;
+/* ------------------------------------Header */
+body {
+    --color1: #F2F2F2;
+    --color2: #181818 ;
 }
 
 .primary-header {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    background-color: #F2F2F2;
+    list-style: none;
+    position: relative;
+    background-color: var(--color1);
+    padding: 12px 20px;
+}
+
+.primary-header li {
+    padding-left: 20px;
+}
+
+.nav-link:hover {
+    color: #232023;
+}
+
+.primary-header li a {
+    color: var(--color2); 
+    font: 400 20px Inter;
+    display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
- }
+    transition: 0.20s ease-in-out;
+}
+
+ .primary-header a.icon {
+    background: var(--color2);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
  .primary-nav-menu {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-
-    /*default in case browser does not suport backdrop-filter*/
-    background: hsl(0 0% 100% / 0.5);
-
-    @supports (backdrop-filter: blur(1rem)) {
-        .primary.navigation {
-            background: hsl(0 0% 100% / 0.1);
-            (backdrop-filter: blur(1rem));
-        }
-    }
-    
+    --gap: 60px;
  }
-
 
 .university-name {
     display: flex;
@@ -58,29 +65,70 @@ a {
     padding-left:50px;
  }
 
- .list-inline-item {
-    padding: 20;
-    margin: 0;
- }
-
  .list-inline-item:first-child {
     left: 0;
     position: absolute;
 }
 
-@media (max-width: 550px) {
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display:none;
+}
+
+/*For small devices, it will display hamburger icon and have the nav menu as a column */
+/*For bigger devices, it will display the nav menu as a row on top of the screen */
+@media(max-width: 610px) {
     .primary-nav-menu {
         display: flex;
-        --gap: 2em;
-
-        /*so that mobile nav is fixed when user scrolls */
-        position: fixed;
-        inset: 0 0 0 30%;
         flex-direction: column;
-        padding: min(30vh, 10rem) 10rem 2em;
-
+        justify-content: center;
+        align-content: flex-start;
+        width: 25%;
+        height: 100vh; 
+        position: fixed; /*So when the user scrolls down, nav menu will be fixed */
+        top: 0;
+        right: -100%;
+        z-index: 100; /*To stack in front of main page section */
+        background-color: hsl(0 0% 100% / 0.9); 
+        transition: all 0.3s ease-in-out;
     }
+
+    .primary-header li a  {
+        font: 400 14px Inter;
+        padding: 10px;
+    }
+
+    .primary-header li {
+        margin-top: 10px;
+    }
+
+    .open-menu , .close-menu {
+        display: block;
+        color: var(--color2);
+    }
+
+    #check:checked ~.primary-nav-menu {
+        right:0;
+    } 
 }
+
 
 /* ------------------------------------Section 0: Home */
 
@@ -88,7 +136,7 @@ a {
     box-sizing: border-box;
     flex: 0 0 auto;
     margin-top: 0;
-    background-color: #ffffff;
+    background-color: var(--color1);
     background-image: url(../img/bkg-drink.jpg);
     background-size: cover;
     padding-bottom: 100px;
@@ -111,7 +159,7 @@ a {
  }
 
  .mixsoc-home-subheading{
-    color: #ffffff;
+    color: var(--color1);
     font-family: Glory;
     font-size: 20px;
     max-width: 235px;
@@ -124,7 +172,7 @@ a {
 /* ------------------------------------Section 1: About Us */
 
 #about-us {
-    background-color: #F2F2F2 ;
+    background-color: var(--color1) ;
 }
 
 /* ------------------------------------Section 2: Committee */
@@ -154,19 +202,8 @@ a {
         font: 8px;
     }
 
-    .nav-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 3rem;
-    }
-
     .nav-link {
         transition: 0.7s ease;
-    }
-
-    .nav-link:hover {
-        color: #232023;
     }
 
     .university-name {
