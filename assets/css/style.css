@@ -162,11 +162,8 @@ nav a:hover {
 
  .mixsoc-home-subheading{
     color: var(--color1);
-    font-family: Glory;
-    font-size: 20px;
-    max-width: 235px;
+    font: 200 20px Glory;
     font-style: extralight;
-    font-weight: 200;
     letter-spacing: -0.3px;
  }
  
@@ -177,6 +174,69 @@ nav a:hover {
     background-color: var(--color1);
 }
 
+#about-us h2 {
+    color: var(--color2);
+    font: 500 80px Glory;
+}
+
+#about-us h3 {
+    color: var(--color2);
+    font: 700 20px Glory;
+}
+
+#about-us p {
+    color: var(--color2);
+    font: 400 20px Glory;
+}
+
+.about-us-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-content:center;
+    padding: 30px;
+    margin-right: 300px;
+}
+
+.about-us-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 800px;
+    padding: 15px;
+}
+
+/*For small devices, it will display main text body at the bottom */
+/*For bigger devices, it will display as a column on the right hand side */
+@media(max-width: 700px) {
+    .about-us-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about-us-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0px;
+    }
+    
+    #about-us h2 {
+        font: 600 40px Glory;
+    }
+
+    #about-us h3 {
+        font: 10px;
+    }
+
+    #about-us p {
+        font-size: 10px;
+    }
+}
 
 /* ------------------------------------Section 2: Committee */
 
