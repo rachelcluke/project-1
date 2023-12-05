@@ -181,12 +181,12 @@ nav a:hover {
 
 #about-us h3 {
     color: var(--color2);
-    font: 700 20px Glory;
+    font: 700 16px Glory;
 }
 
 #about-us p {
     color: var(--color2);
-    font: 400 20px Glory;
+    font: 400 16px Glory;
 }
 
 .about-us-top {
@@ -202,8 +202,18 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    margin-left: 800px;
+    margin-left: 650px;
+    margin-right: 20px;
     padding: 15px;
+    transform: translateY(-90%);
+    text-align: justify;
+}
+
+#about-us-img {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 60vh;
 }
 
 /*For small devices, it will display main text body at the bottom */
@@ -230,11 +240,11 @@ nav a:hover {
     }
 
     #about-us h3 {
-        font: 10px;
+        font: 8px;
     }
 
     #about-us p {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
