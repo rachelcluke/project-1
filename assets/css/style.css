@@ -22,9 +22,7 @@ body {
     padding: 12px 20px;
 }
 
-.primary-header li {
-    padding-left: 20px;
-}
+.primary-header li {padding-left: 20px;}
 
 .primary-header li a {
     color: var(--color2); 
@@ -282,6 +280,27 @@ nav a:hover {
         margin-top: -15px;
         padding-bottom: 40px;
     }
+    /*About Us*/
+    #about-us h2 {font: 600 30px Glory;}
+    #about-us h3 {font: 600 10px Glory;}
+    #about-us p {font-size: 10px;}
+    .about-us-body {
+        margin-left: 10px;
+        margin-right: 10px;
+        transform: translateY(-110%);
+    }
+    #about-us-img {
+        width: 70vw;
+        height: 90vh;
+        transform: translateY(-10%);
+    }
+    .about-us-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 0px;
+        margin-right: 10px;
+    }
 }
 
 /*BREAKPOINT 3 - Medium device eg. LG Nexus 4, dimen: 768x1280*/
@@ -307,29 +326,19 @@ nav a:hover {
         width:100vw;
         padding-right: 90px;
     }
-
     .about-us-body {
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
         transform: translateY(-80%);
     }
     
-    #about-us h2 {
-        font: 600 50px Glory;
-    }
-
-    #about-us h3 {
-        font: 8px;
-    }
-
-    #about-us p {
-        font-size: 8px;
-    }
-
+    #about-us h2 {font: 600 50px Glory;}
+    #about-us h3 {font: 18px;}
+    #about-us p {font-size: 18px;}
     #about-us-img {
         width: 60vw;
         height: 80vh;
@@ -369,6 +378,22 @@ nav a:hover {
         margin-top: -20px;
         padding-bottom: 120px;
     }
+    /*About Us*/
+    #about-us-img {
+        width: 50vw;
+        height: 70vh;
+    }
+    #about-us h3 {font: 500 20px;}
+    #about-us p {font-size: 20px;}
+    .about-us-body {
+        display:flex;
+        flex-direction: column;
+        width: 40vw;
+        margin-block-start: -60px;
+        transform: translateY(-80%);
+        padding-right: 50px;
+    }
+
 }
 
 /*BREAKPOINT 6 - XXL device e.g. Dell XPS 13*/
