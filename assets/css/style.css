@@ -216,37 +216,6 @@ nav a:hover {
     height: 60vh;
 }
 
-/*For small devices, it will display main text body at the bottom */
-/*For bigger devices, it will display as a column on the right hand side */
-@media(max-width: 700px) {
-    .about-us-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .about-us-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        margin-left: 50px;
-        margin-right: 50px;
-        padding: 0px;
-    }
-    
-    #about-us h2 {
-        font: 600 40px Glory;
-    }
-
-    #about-us h3 {
-        font: 8px;
-    }
-
-    #about-us p {
-        font-size: 8px;
-    }
-}
 
 /* ------------------------------------Section 2: Committee */
 
@@ -270,6 +239,35 @@ nav a:hover {
         font-size: 20px;
         margin-top: -12px;
         padding-bottom: 20px;
+    }
+    /*About Us*/
+    #about-us h2 {
+        font: 600 20px Glory;
+    }
+    #about-us h3 {
+        font: 600 8px Glory;
+    }
+    #about-us p {
+        font-size: 8px;
+    }
+    .about-us-body {
+        margin-left: 10px;
+        margin-right: 10px;
+        transform: translateY(-140%);
+    }
+
+    #about-us-img {
+        width: 70vw;
+        height: 90vh;
+        transform: translateY(-10%);
+    }
+
+    .about-us-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 0px;
+        margin-right: 10px;
     }
 }
 
@@ -300,6 +298,42 @@ nav a:hover {
         font-size: 45px;
         margin-top: -15px;
         padding-bottom: 70px;
+    }
+    /*About Us*/
+    .about-us-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width:100vw;
+        padding-right: 90px;
+    }
+
+    .about-us-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        transform: translateY(-80%);
+    }
+    
+    #about-us h2 {
+        font: 600 50px Glory;
+    }
+
+    #about-us h3 {
+        font: 8px;
+    }
+
+    #about-us p {
+        font-size: 8px;
+    }
+
+    #about-us-img {
+        width: 60vw;
+        height: 80vh;
+        transform: translateY(-10%);
     }
 }
 
