@@ -372,9 +372,7 @@ nav a:hover {
         padding: 12px;
     }
     /*Home*/
-    #home {
-        padding-bottom: 100px;
-    }
+    #home {padding-bottom: 100px;}
     .mixsoc-home-title {font-size: 150px;}
     .mixsoc-home-subheading{
         font-size: 80px;
@@ -409,10 +407,22 @@ nav a:hover {
         padding: 15px;
     }
     /*Home*/
+    #home {padding-bottom: 110px;}
     .mixsoc-home-title {font-size: 235px;}
     .mixsoc-home-subheading{
         font-size: 120px;
         margin-top: -20px;
         padding-bottom: 300px;
+    }
+    /*About Us*/
+    #about-us h3 {
+        font: 600 50px;
+    }
+
+    #about-us p {font-size: 30px;}
+    .about-us-body {
+        width: 50vw;
+        margin-block-start: -20%;
+        transform: translateX(40%);
     }
 }
