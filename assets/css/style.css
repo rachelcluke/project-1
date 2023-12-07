@@ -372,6 +372,9 @@ nav a:hover {
         padding: 12px;
     }
     /*Home*/
+    #home {
+        padding-bottom: 100px;
+    }
     .mixsoc-home-title {font-size: 150px;}
     .mixsoc-home-subheading{
         font-size: 80px;
@@ -388,9 +391,10 @@ nav a:hover {
     .about-us-body {
         display:flex;
         flex-direction: column;
+        justify-content:  flex-start;
         width: 40vw;
-        margin-block-start: -60px;
-        transform: translateY(-80%);
+        margin-block-start: -41%;
+        transform: translateX(15%);
         padding-right: 50px;
     }
 
