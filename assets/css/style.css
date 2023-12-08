@@ -104,15 +104,16 @@ nav a:hover {
         height: 100vh; 
         position: fixed; /*So when the user scrolls down, nav menu will be fixed */
         top: 0;
-        right: -100%;
-        z-index: 100; /*To stack in front of main page section */
-        background-color: hsl(0 0% 100% / 0.9); 
-        transition: all 0.3s ease-in-out;
+        right: 0;
+        z-index: 1; 
+        background-color: rgba(59, 57, 49, 0.98); 
+        transition: all 0.2s ease-in-out;
     }
 
     .primary-header li a  {
-        font: 400 14px Inter;
+        font: 400 10px Inter;
         padding: 10px;
+        color: var(--color1);
     }
 
     .primary-header li {
@@ -121,10 +122,15 @@ nav a:hover {
 
     .open-menu , .close-menu {
         display: block;
-        color: var(--color2);
+        color: var(--color1);
     }
 
-    #check:checked ~.primary-nav-menu {
+    nav a:hover {
+        font-weight: 600;
+    }
+
+    #check:checked~nav {
+        display:block;
         right:0;
     } 
 }
