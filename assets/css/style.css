@@ -171,7 +171,6 @@ nav a:hover {
     letter-spacing: -0.3px;
  }
  
-
 /* ------------------------------------Section 1: About Us */
 
 #about-us {
@@ -229,7 +228,8 @@ nav a:hover {
     background-color: var(--color1);
     background-image: url(../img/bartend.jpeg);
     background-size: cover;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
+    padding-top: 50px;
     opacity: 0.85;
 }
 
@@ -252,11 +252,32 @@ button[type="submit"] {
     border-radius:10px;
 }
 
-
-
-
 /* ------------------------------------Footer */
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1C2D32;
+    min-height: 80px;
+}
+
+.footer h5 {
+    font: 400 16px Glory;
+    color: #e2e2e2ac;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.footer i p {
+    color: #e2e2e244;
+    font: 200 14px Glory;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer i:hover {
+    color: #6d574b;
+}
 
 /* ------------------------------------Media Queries */
 
