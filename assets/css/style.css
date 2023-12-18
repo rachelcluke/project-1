@@ -220,13 +220,38 @@ nav a:hover {
     height: 60vh;
 }
 
+/* ------------------------------------Section 3: Sign Up */
 
-/* ------------------------------------Section 2: Committee */
+#sign-up {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    margin-top: 0;
+    background-color: var(--color1);
+    background-image: url(../img/bartend.jpeg);
+    background-size: cover;
+    padding-bottom: 100px;
+    opacity: 0.85;
+}
 
-/* ------------------------------------Section 3: Free Recipes */
+.center-form {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    max-width: 50%;
+    background-color: var(--color1);
+    opacity: 0.94;
+}
 
+button[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--color1);
+    background-color: black;
+    border-radius:10px;
+}
 
-/* ------------------------------------Section 4: Sign Up */
 
 
 
@@ -272,6 +297,16 @@ nav a:hover {
         justify-content: end;
         padding: 0px;
         margin-right: 10px;
+    }
+
+    /*Sign up*/
+    .center-form {
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        max-width: 80%;
     }
 }
 
@@ -430,5 +465,15 @@ nav a:hover {
         width: 50vw;
         margin-block-start: -20%;
         transform: translateX(40%);
+    }
+
+    /*Sign Up*/
+    .center-form {
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        max-width: 50%;
     }
 }
