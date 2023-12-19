@@ -2,7 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory:wght@200;400&family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap');
 
 /* ------------------------------------Universal */
-* {   padding: 0;   margin: 0;}
+* {   
+padding: 0;   
+margin: 0;
+}
+
+html, body {
+    overflow-x: hidden; 
+}
 
 /* ------------------------------------Header */
 body {
@@ -19,7 +26,7 @@ body {
     list-style: none;
     position: relative;
     background-color: var(--color3);
-    padding: 12px 20px;
+
 }
 
 .primary-header li {padding-left: 20px;}
@@ -278,6 +285,28 @@ button[type="submit"] {
 .footer i:hover {
     color: #6d574b;
 }
+
+.contact-us p {
+    color: #e2e2e244;
+    margin-left: 20px;
+}
+
+.download p {
+    color: #e2e2e244;
+    margin-left: 20px;
+}
+
+.download i {
+    color: #e2e2e244;
+    margin-right: 20px;
+}
+
+.social i {
+    color: #e2e2e244;
+    margin-left: 20px;
+}
+
+
 
 /* ------------------------------------Media Queries */
 
